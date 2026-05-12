@@ -1,0 +1,22 @@
+# Gemini Enterprise CLI Helper Scripts
+# Note: Ensure your virtual environment is activated, or run using your environment's python interpreter.
+
+# 1. List all available Gemini Enterprise Apps
+python list_apps.py
+
+# 2. List all custom and connected agents in a specific App
+python list_app_agents.py "<app_name>"
+# Example (Search App):
+python list_app_agents.py "hello_world"
+# Example (Enterprise App):
+python list_app_agents.py "gemini-enterprise-1777951509833"
+
+# 3. Chat with A2A custom agents (built with ADK, e.g., hello_agent)
+python chat_adk_agent.py "<app_name>" "<agent_name>" "<message>"
+# Example:
+python chat_adk_agent.py "hello_world" "hello_agent" "hello"
+
+# 4. Chat with natively hosted UI agents (built in Agent Studio, e.g., Grumpy Greeter Agent)
+python chat_agent_studio.py "<app_name>" "<agent_name>" "<message>"
+# Example:
+python chat_agent_studio.py "gemini-enterprise-1777951509833" "Grumpy Greeter Agent" "Can you greet me?"
