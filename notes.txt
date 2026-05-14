@@ -20,3 +20,6 @@ python chat_adk_agent.py "hello_world" "hello_agent" "hello"
 python chat_agent_studio.py "<app_name>" "<agent_name>" "<message>"
 # Example:
 python chat_agent_studio.py "gemini-enterprise-1777951509833" "Grumpy Greeter Agent" "Can you greet me?"
+
+# 5. Interactive multi-turn chat with natively hosted UI agents (built in Agent Studio, e.g., Grumpy Greeter Agent)
+python chat_agent_studio_full_convo.py "gemini-enterprise-1777951509833" "MLB Info and Game Predictor"
